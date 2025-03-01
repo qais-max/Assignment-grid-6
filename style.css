@@ -336,10 +336,27 @@ border: 1px solid black;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 800px){
   .grid-wrapper{
-    height: 80vh;
-    width: 70%;
+    display:grid;
+    height: 55vh;
+    width: 100%;
+    border: 1px solid black;
+    transform: rotate(-90deg);
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(5, 1fr);  
+  
   }
+  
+}
+@media screen and (max-width: 400px ) {
+ .grid-wrapper{
+  height: 40vh;
+  width: 1000%;
+  border: 1px solid black;
+  transform: rotate(-90deg);
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+ } 
 }
 
